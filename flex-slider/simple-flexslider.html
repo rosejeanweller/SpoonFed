@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Simple Flexslider Demo</title>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, maximum-scale=2" />
+ <!-- Flexslider Gallery styles -->
+ <link href="css/flexslider.css" rel="stylesheet" media="screen" type="text/css" />
+
+  <!--[if lt IE 9]>
+   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+<h1>Simple Flexslider Demo</h1>
+<a href="simple-flexslider.html">Simple Flexslider</a> ~ <a href="thumbnail-slider.html">Thumbnail Slider</a> ~
+<a href="control-nav.html">Control Nav</a> ~ <a href="vimeo-slider.html">Vimeo Slider</a> ~ <a href="youtube-slider.html">YouTube Slider</a>
+<div class="flexslider">
+	<ul class="slides">
+		<li><img alt="" src="images/kitchen_adventurer_donut.jpg" /></li>
+		<li><img alt="" src="images/kitchen_adventurer_caramel.jpg" /></li>
+		<li><img alt="" src="images/kitchen_adventurer_cheesecake_brownie.jpg" /></li>
+		<li><img alt="" src="images/kitchen_adventurer_lemon.jpg" /></li
+	</ul>
+</div>
+<!-- Start FlexSlider Code, place just before closing body tag --> 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.flexslider.js"></script> 
+
+<!-- Initialize the slider on the div we named "flexslider" --> 
+<script type="text/javascript">
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide", // set animation to slide
+        smoothHeight: true // auto-adjust to fit the height of images
+      });
+    });
+</script> 
+
+<!-- Optional FlexSlider Additions --> 
+<script type="text/javascript" src="js/jquery.easing.js"></script> 
+<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+<!-- End FlexSlider Code -->
+</body>
+</html>
